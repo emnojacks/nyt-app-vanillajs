@@ -39,7 +39,7 @@ const Inputs = (props) => {
             <br />
             <Form>
                 <InputGroup> 
-                    <Input id="nameInput" placeholder="name" name={name} onChange={changeName()}>
+                    <Input id="nameInput" placeholder="name" name={name} >
                     </Input>
                 </InputGroup>
                 <br />
@@ -48,15 +48,16 @@ const Inputs = (props) => {
                 <br />
                  <br />
                 <InputGroup>
-                    <Input id="ageInput" placeholder="age" age={age} onChange={changeAge()}>
+                    <Input id="ageInput" placeholder="age" age={age}>
                     </Input>
                 </InputGroup>
                 <br />
-                
+                 <Button onClick="changeAge()">submit
+                </Button>
                 <br />
                  <br />
                 <InputGroup>
-                    <Input id="hobbiesInput" placeholder="hobbies" hobbies={hobbies} onChange={changeName()}>
+                    <Input id="hobbiesInput" placeholder="hobbies" hobbies={hobbies} >
                     </Input>
                 </InputGroup>
                 <br />
